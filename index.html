@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heartbeats in Harmony - Katnificent</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <img src="images/Picsart_25-06-04_13-34-10-401.jpg" alt="Album Cover" class="cover"/>
+    <h1>Heartbeats in Harmony</h1>
+    <h2>by Katnificent</h2>
+  </header>
+
+  <main>
+    <section class="player">
+      <h3>Stream the Album</h3>
+      <div class="now-playing" id="nowPlaying">Now Playing: None</div>
+      <audio id="audio" controls></audio>
+      <div class="controls">
+        <button id="prevBtn">⏮ Prev</button>
+        <button id="playPauseBtn">⏯ Play/Pause</button>
+        <button id="nextBtn">⏭ Next</button>
+      </div>
+      <ul id="trackList"></ul>
+    </section>
+
+    <section class="purchase">
+      <h3>Own the Physical Copy</h3>
+      <p>Includes a bonus track featuring Billboard-nominated artist DrumDummie 🥁🔥</p>
+      <form action="https://your-payment-processor.com" method="POST">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="address">Shipping Address:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Order Physical Album - $15</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DC Entertainment. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>
